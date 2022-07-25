@@ -1,5 +1,5 @@
 from django.http import HttpResponse
 
 def index(request):
-    print(request.path)
+    message = request.GET.get('parameter')
     return HttpResponse("Hello, world!")
